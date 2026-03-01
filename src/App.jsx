@@ -1,40 +1,19 @@
-import { useState } from "react";
-
-function App() {
-  const [selectedProduct, setSelectedProduct] = useState(null);
-
-  const products = [
-    {
-      id: 1,
-      name: "Luxury Modern Sofa",
-      price: "$1,200",
-      image:
-        "https://images.unsplash.com/photo-1616628182507-0e7c6dfe2c6c",
-    },
-    {
-      id: 2,
-      name: "Premium Orange Couch",
-      price: "$950",
-      image:
-        "https://images.unsplash.com/photo-1582582494700-5b4a8a6b2f9c",
-    },
-  ];
-
-  return (
-    <div style={{ padding: "20px", fontFamily: "Arial" }}>
-      <h1>Hand’s & Brain Interior Furniture</h1>
-      <p>Custom Luxury Furniture Built for Modern Spaces.</p>
-
-      <h2>Our Designs</h2>
-
-      {products.map((product) => (
-        <div
-          key={product.id}
-          style={{
-            border: "1px solid #ddd",
-            padding: "15px",
-            marginBottom: "20px",
-            borderRadius: "10px",
+const products = [
+  {
+    id: 1,
+    name: "Luxury Modern Sofa",
+    price: "$1,200",
+    image:
+      "https://images.unsplash.com/photo-1616628182507-0e7c6dfe2c6c?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 2,
+    name: "Premium Orange Couch",
+    price: "$950",
+    image:
+      "https://images.unsplash.com/photo-1582582494700-5b4a8a6b2f9c?auto=format&fit=crop&w=800&q=80",
+  },
+];            borderRadius: "10px",
           }}
         >
           <img
